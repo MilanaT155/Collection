@@ -2,13 +2,17 @@ class Words
 {
     private string text;
 
+ answer
+main
     public Words(string t) => text = t;
 
     public int Length => text.Length;
 
     public bool IsPalindrome()
     {
+ answer
       
+main
         if (string.IsNullOrEmpty(text))
             return true;
 
@@ -18,7 +22,9 @@ class Words
         return true;
     }
 
+ answer
 
+ main
     public string Reverse()
     {
         char[] charArray = text.ToCharArray();
@@ -26,7 +32,9 @@ class Words
         return new string(charArray);
     }
 
+ answer
  
+ main
     public bool ContainsDigits()
     {
         foreach (char c in text)
@@ -37,9 +45,17 @@ class Words
 
     public override string ToString() => text;
 
+ answer
   
     public string ToUpper() => text.ToUpper();
 
  
     public string ToLower() => text.ToLower();
+
+    public string ToUpper() => text.ToUpper();
+
+
+    public string ToLower() => text.ToLower();
+}
+ main
 }
