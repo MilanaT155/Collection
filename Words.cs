@@ -2,14 +2,17 @@ class Words
 {
     private string text;
 
-    // »справлен конструктор - название класса Words, а конструктор был Word
+ answer
+main
     public Words(string t) => text = t;
 
     public int Length => text.Length;
 
     public bool IsPalindrome()
     {
-        // ƒобавлена проверка на пустую строку
+ answer
+      
+main
         if (string.IsNullOrEmpty(text))
             return true;
 
@@ -19,7 +22,9 @@ class Words
         return true;
     }
 
-    // ƒобавлен метод дл€ реверса строки
+ answer
+
+ main
     public string Reverse()
     {
         char[] charArray = text.ToCharArray();
@@ -27,7 +32,9 @@ class Words
         return new string(charArray);
     }
 
-    // ƒобавлен метод дл€ проверки, содержит ли слово цифры
+ answer
+ 
+ main
     public bool ContainsDigits()
     {
         foreach (char c in text)
@@ -38,10 +45,17 @@ class Words
 
     public override string ToString() => text;
 
-    // ƒобавлен метод дл€ получени€ текста в верхнем регистре
+ answer
+  
     public string ToUpper() => text.ToUpper();
 
-    // ƒобавлен метод дл€ получени€ текста в нижнем регистре
+ 
+    public string ToLower() => text.ToLower();
+
+    public string ToUpper() => text.ToUpper();
+
+
     public string ToLower() => text.ToLower();
 }
+ main
 }
